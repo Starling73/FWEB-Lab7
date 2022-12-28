@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./css/App.css";
+import Content from "./Content";
+import Image from "./Image";
+import Galery from "./Galery";
+import Header from "./Header";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      firstTask: true,
+    };
+  }
+
+  render() {
+    return this.state.firstTask ? (
+      <div align={"center"} className="App">
+        <button class="button" onClick={(e) => this.setState({ firstTask: false })}>
+          Task 2
+        </button>
+        <Header />
+        <Content />
+        <Image />
+      </div>
+    ) : (
+      <div align={"center"} className="App">
+        <button class="button" onClick={(e) => this.setState({ firstTask: true })}>
+          Task 1
+        </button>
+        <Galery />
+      </div>
+    );
+  }
 }
 
 export default App;
+
