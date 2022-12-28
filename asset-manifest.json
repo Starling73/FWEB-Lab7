@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/FWEB-Lab7/static/css/main.ec871995.css",
+    "main.js": "/FWEB-Lab7/static/js/main.b9cb6778.js",
+    "static/js/787.28cb0dcd.chunk.js": "/FWEB-Lab7/static/js/787.28cb0dcd.chunk.js",
+    "index.html": "/FWEB-Lab7/index.html",
+    "main.ec871995.css.map": "/FWEB-Lab7/static/css/main.ec871995.css.map",
+    "main.b9cb6778.js.map": "/FWEB-Lab7/static/js/main.b9cb6778.js.map",
+    "787.28cb0dcd.chunk.js.map": "/FWEB-Lab7/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ec871995.css",
+    "static/js/main.b9cb6778.js"
+  ]
+}
